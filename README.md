@@ -28,7 +28,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 Begin by creating a directory called "PHP" on the root of the C Drive. (C:\PHP)
 </p>
 <p>
-<img src="https://i.imgur.com/vM5cGXQ.png" alt="Create C Directory"/>
+<img src="https://i.imgur.com/QJn8OEM.png" alt="Create C Directory"/>
 </p>
 
 <br />
@@ -91,10 +91,15 @@ Now lets install osTicket
 - Rename: ost-config.php
     - From: C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php
     - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
+<img src="https://i.imgur.com/V7g9m9e.png" alt="osTicket 6"/>
+
 
 - Assign Permissions: ost-config.php
     - Disable inheritance -> Remove All
     - New Permissions -> Everyone -> All
+<img src="https://i.imgur.com/1L1n0d9.png" alt="osTicket 7"/>
+<img src="https://i.imgur.com/XSB8ofc.png" alt="osTicket 8"/>
+
 
 - Continue Setting up osTicket in the browser (click Continue)
     - Name Helpdesk
@@ -105,12 +110,16 @@ Now lets install osTicket
     - Create a new session, root/root
     - Connect to the session
     - Create a database called “osTicket”
+<img src="https://i.imgur.com/TJsiPlW.png" alt="osTicket 9"/>
+<img src="https://i.imgur.com/3wlehYn.png" alt="osTicket 10"/>
+<img src="https://i.imgur.com/QSqzPxi.png" alt="osTicket 11"/>
 
 - Continue Setting up osTicket in the browser
     - MySQL Database: osTicket
     - MySQL Username: root
     - MySQL Password: root
     - Click “Install Now!”
+<img src="https://i.imgur.com/1IQ23cc.png" alt="osTicket 12"/>
 
 - You have now installed and can use osTicket!
     - Browse to your help desk login page: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
