@@ -24,32 +24,21 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-<p>
+
 Begin by creating a directory called "PHP" on the root of the C Drive. (C:\PHP)
-</p>
-<p>
+
+
 <img src="https://i.imgur.com/QJn8OEM.png" alt="Create C Directory"/>
-</p>
 
-<br />
-
-<p>
-  
 Next install [VC redist.x86.exe](https://drive.google.com/file/d/1s1OsGF3-ioO0_9LYizPRiVuIkb3lFJgH/view) as well as [MySQL 5.5.62-win32.msi](https://drive.google.com/file/d/1_OWh9p7VQLcrB0q_V7qT8yHl0xo5gv7z/view) which are both found in the "osTicket-Installation-Files” folder.
-</p>
-<br />
 
-<p>
 Now lets configure MySQL
-- Pick Typical setup
-- Launch Configuration Wizard (after install)
-- Standard Configuration
-- for the sake of the tutorial we are going to make the username AND password "root" (make this something secure that nobody else knows.)
-</p>
+  - Pick Typical setup
+  - Launch Configuration Wizard (after install)
+  - Standard Configuration
+  - for the sake of the tutorial we are going to make the username AND password "root" (make this something secure that nobody else knows.)
 
 <h1>Setting up IIS and installing osTicket</h1>
-
-<p>
   
 - Run IIS as admin
 - Register PHP from within IIS (PHP Manager -> C:\PHP\php-cgi.exe)
@@ -57,10 +46,9 @@ Now lets configure MySQL
 <img src="https://i.imgur.com/mWoAQP2.png" alt="Register PHP"/>
 <img src="https://i.imgur.com/kK6LM2Q.png" alt="Register PHP 1"/>
 <img src="https://i.imgur.com/UCLhb1w.png" alt="Register PHP 2"/>
-<br />
+
 <h2>Setting up osTicket</h2>
 
-<p>
 Now lets install osTicket
   
 - From the “osTicket-Installation-Files” folder, unzip “osTicket-v1.15.8.zip” and copy the “upload” folder into “c:\inetpub\wwwroot”
@@ -73,8 +61,6 @@ Now lets install osTicket
     - On the right, click “Browse *:80”
 <img src="https://i.imgur.com/QoisAKS.png" alt="osTicket 1"/>
 <img src="https://i.imgur.com/5eN2y4d.png" alt="osTicket 2"/>
-
-
 
 - Go back to IIS, sites -> Default -> osTicket
 - Double-click PHP Manager
@@ -93,13 +79,11 @@ Now lets install osTicket
     - To: C:\inetpub\wwwroot\osTicket\include\ost-config.php
 <img src="https://i.imgur.com/V7g9m9e.png" alt="osTicket 6"/>
 
-
 - Assign Permissions: ost-config.php
     - Disable inheritance -> Remove All
     - New Permissions -> Everyone -> All
 <img src="https://i.imgur.com/1L1n0d9.png" alt="osTicket 7"/>
 <img src="https://i.imgur.com/XSB8ofc.png" alt="osTicket 8"/>
-
 
 - Continue Setting up osTicket in the browser (click Continue)
     - Name Helpdesk
@@ -124,7 +108,7 @@ Now lets install osTicket
 - You have now installed and can use osTicket!
     - Browse to your help desk login page: [http://localhost/osTicket/scp/login.php](http://localhost/osTicket/scp/login.php)
     - End Users osTicket URL: [http://localhost/osTicket/](http://localhost/osTicket/ )
-</p>
+
 
 
 
